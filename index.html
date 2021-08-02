@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Excuse Generator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript">
+
+		function randomExcuse(){
+
+const who = ['the dog','my granma','his turtle','my bird'];
+const what = ['eat','pissed','crushed','broked'];
+const when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+		
+let randomizeWho = who[Math.floor(Math.random() * who.length)];
+let randomizeWhat = what[Math.floor(Math.random() * what.length)];
+let randomizeWhen = when[Math.floor(Math.random() * when.length)];
+		
+		return document.getElementById("excuse").innerHTML = '<h2>' + randomizeWho + ' ' + randomizeWhat + ' ' + randomizeWhen + '.' + '</h2>';
+		}
+
+
+	window.onload = randomExcuse;
+	</script>
+
+</head>
+<body>
+
+<div id="content">
+<p id="title-excuse"><h1>OMG! you will not believe me but...</h1></p>
+
+ <p id="excuse"></p>
+
+  <button id="mybutton" onclick="randomExcuse()">Generate Excuse</button>
+
+  </div>
+</body>
+</html>

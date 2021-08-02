@@ -1,0 +1,16 @@
+body{
+	background: lightgray;
+	margin: 0;
+}
+#content{
+	text-align: center;
+	margin: auto;
+	margin-top: 200px;
+	width: 600px;
+}
+
+#mybutton{
+	margin: auto;
+	width: 600px;
+}
+
